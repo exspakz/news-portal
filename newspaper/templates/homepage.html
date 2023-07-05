@@ -1,0 +1,43 @@
+{% extends 'default.html' %}
+
+{% load cache %}
+{% load i18n %}
+
+{% block title %}
+{% trans 'News Portal' %}
+{% endblock title %}
+
+{% cache 60 * 5 content %}
+{% block content %}
+
+    <br>
+    <h1><span style="color: #0000ff;">{{ current_time }}</span></h1>
+    <hr size="2">
+    <h1>{% trans 'Welcome To The' %}<br>{% trans 'News Portal' %}</h1>
+    <hr size="2">
+    {% if not is_author %}
+    <button>
+        <a class="nav-link" href="{% url 'account_upgrade' %}">
+            <h4><strong>{% trans 'Join the authors!' %}</strong></h4>
+        </a>
+    </button>
+    <hr size="1">
+    {% endif %}
+    <div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <h3><a class="nav-link" href="{% url 'post_list' %}"> {% trans 'All News' %} </a></h3>
+            </li>
+            <li class="nav-item">
+                <h3><a class="nav-link" href="{% url 'post_search' %}"> {% trans 'Search News' %} </a></h3>
+            </li>
+            <li class="nav-item">
+                <h3><a class="nav-link" href="{% url 'post_create' %}"> {% trans 'Create News' %} </a></h3>
+            </li>
+            <li class="nav-item">
+                <h3><a class="nav-link" href="{% url 'author_posts' %}"> {% trans 'Update News' %} </a></h3>
+            </li>
+        </ul>
+    </div>
+{% endblock content %}
+{% endcache %}

@@ -1,0 +1,23 @@
+{% extends 'default.html' %}
+
+{% load i18n %}
+
+{% block title %}
+{% trans 'Profile' %}
+{% endblock title %}
+
+
+{% block content %}
+    <h1>{% trans 'Your profile' %}</h1>
+    <h3>{% trans 'User:' %} {{ request.user.username }}</h3>
+    {% if is_author %}
+        <h3>{% trans 'You are the author' %}</h3>
+    {% endif %}
+
+    <hr size="2">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value={% trans 'Save' %}>
+    </form>
+{% endblock content %}

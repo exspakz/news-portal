@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-31 17:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: news/filters.py:14 news/forms.py:9 news/templates/author_posts.html:22
+#: news/templates/category_list.html:8 news/templates/post_search.html:27
+#: news/templates/posts.html:20
+msgid "Title"
+msgstr "Заголовок"
+
+#: news/filters.py:20 news/templates/author_posts.html:23
+#: news/templates/category_list.html:9 news/templates/post_search.html:28
+#: news/templates/posts.html:21
+msgid "Date"
+msgstr "Дата публикации"
+
+#: news/filters.py:29 news/templates/post.html:14
+msgid "Author"
+msgstr "Автор"
+
+#: news/filters.py:30
+msgid "Select a author"
+msgstr "Выберите автора"
+
+#: news/filters.py:36 news/forms.py:13 news/templates/post.html:16
+#: news/templates/posts.html:23
+msgid "Category"
+msgstr "Категория"
+
+#: news/filters.py:37
+msgid "Select a category"
+msgstr "Выберите категорию"
+
+#: news/filters.py:42 news/forms.py:17
+msgid "Type"
+msgstr "Тип поста"
+
+#: news/filters.py:43
+msgid "Select a type"
+msgstr "Выберите тип поста"
+
+#: news/forms.py:10
+msgid "Text"
+msgstr "Описание"
+
+#: news/models.py:59 news/templates/post_update.html:11
+msgid "News"
+msgstr "Новость"
+
+#: news/models.py:60
+msgid "Article"
+msgstr "Статья"
+
+#: news/templates/author_posts.html:6 news/templates/author_posts.html:11
+msgid "My news"
+msgstr "Мои новости"
+
+#: news/templates/author_posts.html:14 news/templates/post_search.html:22
+#: news/templates/posts.html:15
+msgid "The number of news"
+msgstr "Количество новостей"
+
+#: news/templates/author_posts.html:17
+msgid "Click on the Title for editing"
+msgstr "Нажмите на Заголовок для редактирования"
+
+#: news/templates/author_posts.html:24 news/templates/category_list.html:10
+#: news/templates/post_search.html:29 news/templates/posts.html:22
+msgid "Preview"
+msgstr "Превью"
+
+#: news/templates/author_posts.html:33 news/templates/post_delete.html:6
+#: news/templates/post_delete.html:15 news/templates/post_delete.html:16
+msgid "Delete"
+msgstr "Удалить"
+
+#: news/templates/author_posts.html:38 news/templates/post_search.html:41
+#: news/templates/posts.html:40
+msgid "No news"
+msgstr "Нет новостей"
+
+#: news/templates/post.html:15
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: news/templates/post.html:23
+msgid "Subscribe"
+msgstr "Подписаться"
+
+#: news/templates/post.html:28
+msgid "Unsubscribe"
+msgstr "Отписаться"
+
+#: news/templates/post.html:37
+msgid "Sign In to subscribe"
+msgstr "Войдите, чтобы подписаться"
+
+#: news/templates/post_create.html:6
+msgid "Create"
+msgstr "Публикация"
+
+#: news/templates/post_create.html:11
+msgid "Create a news"
+msgstr "Публикация новости"
+
+#: news/templates/post_create.html:14
+msgid "You have reached the limit and can no longer publish news today"
+msgstr "Вы достигли лимита публикации новостей на сегодня"
+
+#: news/templates/post_create.html:17
+msgid "Today you have created news"
+msgstr "Сегодня вы опубликовали новостей"
+
+#: news/templates/post_create.html:17
+msgid "limit"
+msgstr "лимит"
+
+#: news/templates/post_create.html:21 news/templates/post_update.html:16
+#: templates/account/profile_update.html:21
+msgid "Save"
+msgstr "Принять"
+
+#: news/templates/post_delete.html:11
+msgid "Delete the post"
+msgstr "Удалить новость"
+
+#: news/templates/post_search.html:7
+msgid "Search news"
+msgstr "Поиск новостей"
+
+#: news/templates/post_search.html:12
+msgid "Search a news"
+msgstr "Поиск новостей"
+
+#: news/templates/post_search.html:16
+msgid "Search"
+msgstr "Поиск"
+
+#: news/templates/post_update.html:6
+msgid "Update"
+msgstr "Редактирование"
+
+#: news/templates/posts.html:7 news/templates/posts.html:12
+msgid "All news"
+msgstr "Все новости"
+
+#: templates/account/email/email_confirmation_signup_message.html:8
+#: templates/account/email/email_post_create_message.html:8
+#: templates/account/email/email_post_last_weak_message.html:8
+msgid "Document"
+msgstr "Документ"
+
+#: templates/account/email/email_confirmation_signup_message.html:12
+msgid "Thank you for registering"
+msgstr "Благодарим за регистрацию"
+
+#: templates/account/email/email_confirmation_signup_message.html:13
+msgid "Please follow"
+msgstr "Пожалуйста, проследуйте по"
+
+#: templates/account/email/email_confirmation_signup_message.html:13
+msgid "the link"
+msgstr "ссылке"
+
+#: templates/account/email/email_confirmation_signup_message.html:13
+msgid "to activate your account"
+msgstr "для активации вашего аккаунта"
+
+#: templates/account/email/email_post_create_message.html:11
+#: templates/account/email/email_post_create_message.html:13
+msgid "New post"
+msgstr "Новая статья"
+
+#: templates/account/email/email_post_create_message.html:13
+#: templates/account/email/email_post_last_weak_message.html:13
+msgid "Hello"
+msgstr "Привет"
+
+#: templates/account/email/email_post_create_message.html:13
+msgid "in your favorite category"
+msgstr "в твоей любимой категории"
+
+#: templates/account/email/email_post_create_message.html:14
+msgid "link to the post"
+msgstr "ссылка на статью"
+
+#: templates/account/email/email_post_last_weak_message.html:11
+msgid "All news in the last week in category"
+msgstr "Все новости за последнюю неделю в категории"
+
+#: templates/account/email/email_post_last_weak_message.html:14
+msgid "All news in the last week in your favorite category"
+msgstr "Все новости за последнюю неделю в твоей любимой категории"
+
+#: templates/account/profile_update.html:6 templates/default.html:28
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/account/profile_update.html:11
+msgid "Your profile"
+msgstr "Ваш профиль"
+
+#: templates/account/profile_update.html:12
+msgid "User:"
+msgstr "Пользователь"
+
+#: templates/account/profile_update.html:14
+msgid "You are the author"
+msgstr "Вы являетесь автором"
+
+#: templates/default.html:23
+msgid "NEWS PORTAL"
+msgstr "НОВОСТНОЙ ПОРТАЛ"
+
+#: templates/default.html:29
+msgid "Sign Out"
+msgstr "Выйти"
+
+#: templates/default.html:31
+msgid "Sign In"
+msgstr "Войти"
+
+#: templates/default.html:32
+msgid "Sign Up"
+msgstr "Регистрация"
+
+#: templates/homepage.html:7 templates/homepage.html:15
+msgid "News Portal"
+msgstr "Новостной Портал"
+
+#: templates/homepage.html:15
+msgid "Welcome To The"
+msgstr "Добро Пожаловать на"
+
+#: templates/homepage.html:20
+msgid "Join the authors!"
+msgstr "Стать автором!"
+
+#: templates/homepage.html:28
+msgid "All News"
+msgstr "Все Новости"
+
+#: templates/homepage.html:31
+msgid "Search News"
+msgstr "Поиск Новостей"
+
+#: templates/homepage.html:34
+msgid "Create News"
+msgstr "Публикация Новостей"
+
+#: templates/homepage.html:37
+msgid "Update News"
+msgstr "Редактирование Новостей"

@@ -1,0 +1,40 @@
+{% extends 'default.html' %}
+
+{% load i18n %}
+
+{% block title %}
+{% trans 'My news' %}
+{% endblock title %}
+
+{% block content %}
+    <br>
+    <h1>{% trans 'My news' %}</h1>
+        {% if author_posts %}
+            <h3>
+                {% trans 'The number of news' %}:
+                {{ author_posts|length }}
+                <br>
+                {% trans 'Click on the Title for editing' %}
+            </h3>
+            <hr>
+            <table>
+                <tr>
+                    <td><h4><strong>{% trans 'Title' %}</strong></h4></td>
+                    <td><h4><strong>{% trans 'Date' %}</strong></h4></td>
+                    <td><h4><strong>{% trans 'Preview' %}</strong></h4></td>
+                    <td><h4><strong></strong></h4></td>
+                </tr>
+
+                {% for post in author_posts|dictsortreversed:'dateCreation' %}
+                <tr>
+                    <td><a class="nav-link" href="{% url 'post_update' post.id %}"> {{ post.title }} </a></td>
+                    <td>{{ post.dateCreation|date:'d.M.Y' }}</td>
+                    <td>{{ post.text|truncatewords:20 }}</td>
+                    <td><button><a class="nav-link" href="{% url 'post_delete' post.id %}"><strong>{% trans 'Delete' %}</strong></a></button></td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <h2>{% trans 'No news' %}!</h2>
+        {% endif %}
+{% endblock content %}

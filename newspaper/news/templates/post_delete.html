@@ -1,0 +1,18 @@
+{% extends 'default.html' %}
+
+{% load i18n %}
+
+{% block title %}
+{% trans 'Delete' %}
+{% endblock title %}
+
+{% block content %}
+    <br>
+    <h1>{% trans 'Delete the post' %}?</h1>
+
+    <form action=""  method="post">
+        {% csrf_token %}
+        <p>{% trans 'Delete' %} "{{ object.title }}"?</p>
+        <input type="submit" value={% trans 'Delete' %}>
+    </form>
+{% endblock content %}
